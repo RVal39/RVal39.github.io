@@ -1,12 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
     <link rel="stylesheet" href="Style.Css">
+    <style>
+        body {
+            background: linear-gradient(pink, coral);
+        }
+
+        #container {
+            margin: 20px auto;
+            max-width: 400px;
+            padding: 30px;
+        }
+
+        .wrapper {
+            background-color: white;
+            color: #333;
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        #grid-container {
+            margin: 10px;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            justify-content: space-evenly;
+
+        }
+
+        #grid-container div {
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            background: linear-gradient(rgb(190, 13, 42), rgb(117, 84, 72));
+            border-radius: 5px;
+
+        }
+
+        p,
+        h1 {
+            text-align: center;
+        }
+    </style>
 </head>
+
 <body>
     <nav>
         <ul>
@@ -16,6 +59,39 @@
             <li><a href="Projects.html">Projects</a></li>
         </ul>
     </nav>
-    <h1>These are a couple of projects I have been working on</h1>
+    <div>
+
+        <div id="container">
+            <div class="wrapper">
+                <h1>Projects I would like to complete one day</h1>
+                <p>I haven't tried making any projects yet, but I have a couple ideas in mind.</p>
+            </div>
+
+        </div>
+        <div id="grid-container">
+            <div>
+                <img src="https://raw.githubusercontent.com/Abhighyaa/Online-bakery-store/master/homepage.PNG"
+                    alt="onlineBakery" width="400px">
+                <p>My mother wanted to start making baked goods and wanted to start a website for it.
+                    <br>it would be nice to make one for her one day
+                </p>
+            </div>
+            <div>
+                <img src="https://www.coolmathgames.com/sites/default/files/Snake%20OG%20Image.png" alt="Snake"
+                    width="400px">
+                <p>I want to try and make a little minigame like snake for fun</p>
+            </div>
+            <div>
+                <img src="https://timber.mhmcdn.com/public/member/959828/thumb/91314d39-a97a-4c1d-8dcb-1f146fa8ace2-w300-p1.jpg"
+                    alt="menu">
+                <p>Expanding on the online bakery idea, I also want to make the menu design for when that idea comes to
+                    light</p>
+            </div>
+        </div>
+        <footer>&copy; Google Images</footer>
+
+    </div>
+
 </body>
+
 </html>
