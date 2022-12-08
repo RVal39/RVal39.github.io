@@ -1,12 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Information</title>
+    <link rel="stylesheet" href="Style.Css">
+    <style>
+        body {
+            background-color: rgb(47, 70, 175);
+        }
+
+        #container {
+            margin: 20px auto;
+            max-width: 400px;
+            padding: 30px;
+        }
+
+        #container h1 {
+            text-align: center;
+            font-size: 35px;
+            padding: 15px;
+            margin: auto;
+        }
+
+        .wrapper {
+            background-color: azure;
+            color: black;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .group {
+            text-align: center;
+        }
+        .group p{
+            font-size: 20px;
+            font-style: oblique;
+        }
+        footer{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+            color: azure;
+            margin-top: -20px;
+            padding: 5px;
+            text-align: center;
+        }
+        
+    </style>
 </head>
+
 <body>
-    <h1>Here is a list of different ways to contact me</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="AboutMe.html">About Me</a></li>
+            <li><a href="Contact.html">Contact Info</a></li>
+            <li><a href="Projects.html">Projects</a></li>
+        </ul>
+    </nav>
+    <div id="container">
+        <div class="wrapper">
+            <h1>Here are some ways to get in touch with me!</h1>
+            <div class="group">
+                <p>Gmail</p>
+                <a href="Rowie.Valdez39@gmail.com"><img src="https://cdn-icons-png.flaticon.com/512/281/281769.png"
+                        alt="gmail" width="60px"></a>
+            </div>
+            <div class="group">
+                <p>Phone Number</p>
+                <a href="206-383-2386"><img
+                        src="https://w7.pngwing.com/pngs/759/922/png-transparent-telephone-logo-iphone-telephone-call-smartphone-phone-electronics-text-trademark-thumbnail.png"
+                        alt="phone" width="60px"></a>
+                        
+            </div>
+        </div>
+    </div>
+    <footer>I will try and reply as soon as I can!</footer>
 </body>
+
 </html>
