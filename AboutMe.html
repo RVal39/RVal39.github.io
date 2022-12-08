@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,55 @@
     <title>About Me</title>
     <link rel="stylesheet" href="Style.Css">
     <style>
-        body{
-            background-color: aqua;
+        #container {
+            margin: 20px auto;
+            max-width: 400px;
+            padding: 30px;
+        }
+
+        .wrapper {
+            background-color: white;
+            color: #333;
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        .wrapper h1 {
+            text-align: center;
+        }
+
+        #grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            
+        }
+
+        #grid-container div {
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            background-color: aquamarine;
+            border-radius: 20px;
+        }
+
+        p {
+            padding: 5px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .aboutme-image {
+            background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, 0.5)), url(/images/AboutMe.PNG);
+            background-position: center;
+            height: calc(100vh - 56px);
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     </style>
 </head>
+
 <body>
     <nav>
         <ul>
@@ -21,7 +66,38 @@
             <li><a href="Projects.html">Projects</a></li>
         </ul>
     </nav>
-    <h1>Hello! My name is Rowie Valdez</h1>
+    <div class="aboutme-image">
+        <div>
+            <div id="container">
+                <div class="wrapper">
+                    <h1>Hello! My Name is Rowie Valdez</h1>
+                    <p>Here are some things about me</p>
+                </div>
+            </div>
+            <div id="grid-container">
+                <div>
+                    <img src="https://www.computersciencedegreehub.com/wp-content/uploads/2016/02/what-is-coding-1024x683.jpg"
+                        alt="Coding" width="400px">
+                    <p>I'm still pretty new to coding so I'm not to fluent on any language yet.</p>
+                    <p>Though I have started to learn C#, HTML and Javascrpit.</p>
+                </div>
+                <div>
+                    <img src="https://gallery.yopriceville.com/var/albums/Free-Clipart-Pictures/School-Clipart/Graduation_Cap_and_Diploma_PNG_Clipart_Picture.png?m=1437706501"
+                        alt="Degree" width="400px">
+                    <p>I have my highschool diploma, but I am currently working on my AAS-T for Computer Science.</p>
+                </div>
+                <div>
+                    <img src="https://www.thespruceeats.com/thmb/KKVYHEcAN6Jt7yvULfCB4r3ad30=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/what-is-sushi-5079606-hero-01-e5a0a26f194a49478f84e04193baaefa.jpg" alt="jobs"
+                        width="400px">
+                    <p>One of my past jobs, I worked as a sushi chef.</p>
+                    <p>At the same time, I was also working as a Phlebotomist</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <footer>&copy; Google images</footer>
 
 </body>
+
 </html>
